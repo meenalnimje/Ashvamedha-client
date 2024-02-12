@@ -3,7 +3,6 @@
 Welcome to Ashvamedha - the official website of the annual sports fest of IIT Bhubaneswar (IITBBS). This website is built using the MERN (MongoDB, Express.js, React.js, Node.js) stack and features a visually appealing responsive UI, event registration, live scores for 6 sports, match popups, leaderboard, and a gallery of last year's event.
 
 ## Features
-
 - **Visually Appealing Responsive UI:** The website is designed to be visually appealing and fully responsive across various devices.
 - **Event Registration:** Participants can register for various sports events directly through the website.
 - **Live Scores:** Live scores for 6 sports events are displayed in real-time on the website.
@@ -37,8 +36,10 @@ Welcome to Ashvamedha - the official website of the annual sports fest of IIT Bh
 
 6. Open your browser and navigate to http://localhost:3000 to use the application.
 
-
 ## Demo
-
 - click on www.ashvamedha.in
 - video https://asset.cloudinary.com/dhmukcmmh/c2d11f84fa6ef90090a61a7ba1b9e3af
+
+## Contibutors
+- Meenal Nimje https://github.com/meenalnimje
+- Arihant Garg https://github.com/ArihantGarg
