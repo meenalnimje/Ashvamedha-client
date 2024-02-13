@@ -37,8 +37,8 @@ Welcome to Ashvamedha - the official website of the annual sports fest of IIT Bh
 6. Open your browser and navigate to http://localhost:3000 to use the application.
 
 ## Demo
-- click on www.ashvamedha.in
-- video https://asset.cloudinary.com/dhmukcmmh/c2d11f84fa6ef90090a61a7ba1b9e3af
+- Live website:- www.ashvamedha.in (Check Internet speed > 90Mbps)
+- Video :- https://youtu.be/3nrs9WOwGps
 
 ## Contibutors
 - Meenal Nimje https://github.com/meenalnimje
