@@ -27,7 +27,7 @@ function LiveScore() {
     }
   }
   useEffect(() => {
-    const interval = setInterval(fetchLiveScore, 5000);
+    const interval = setInterval(fetchLiveScore, 1000);
     return () => clearInterval(interval);
   }, [params]);
   return (

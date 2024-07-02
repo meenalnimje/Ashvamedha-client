@@ -46,7 +46,6 @@ function PointDetails() {
       <div class="wrapper">
         <h2 class="text_shadows">Your team is yet to score</h2>
       </div>
-
       <Footer />
     </div>
   ) : (
@@ -55,7 +54,7 @@ function PointDetails() {
       <div className="main">
         <h2 className="heading-point">
           <span className="h1">POINT</span>
-          <span className="h2">INFO.</span>
+          <span className="h2">TABLE</span>
         </h2>
         {!isLoading && (
           <div className="pointdetail">

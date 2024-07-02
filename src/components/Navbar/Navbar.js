@@ -5,6 +5,7 @@ import {
   FaInstagramSquare,
   FaYoutubeSquare,
 } from "react-icons/fa";
+import { IoClose, IoMenu } from "react-icons/io5";
 import React, { useState } from "react";
 
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -33,21 +34,21 @@ function Navbar() {
       navigate: true,
     },
     {
-      title: "Leaderboard",
-      path: "/leaderboard",
-      cName: "nav-text",
-      navigate: true,
-    },
-    {
-      title: "Our Team",
+      title: "Team",
       path: "/team",
       cName: "nav-text",
       navigate: true,
     },
     {
-      title: "Our Gallery",
+      title: "Gallery",
       path: "/gallery",
       cName: "nav-text special",
+      navigate: true,
+    },
+    {
+      title: "Leaderboard",
+      path: "/leaderboard",
+      cName: "nav-text",
       navigate: true,
     },
     {
@@ -96,7 +97,11 @@ function Navbar() {
         {/* hamburger menu start  */}
         <div className="hamburger-menu">
           <a href="#" onClick={() => setShowMediaIcons(!showMediaIcons)}>
-            <GiHamburgerMenu className="icon" />
+            {showMediaIcons ? (
+              <IoClose className="icon" />
+            ) : (
+              <IoMenu className="icon" />
+            )}
           </a>
         </div>
       </div>

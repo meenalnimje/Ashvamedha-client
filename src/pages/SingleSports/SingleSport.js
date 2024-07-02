@@ -4,13 +4,13 @@ import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 
 import { AiOutlineDoubleRight } from "react-icons/ai";
+import Footer from "../../components/Footer/Footer";
 import Navbar from "../../components/Navbar/Navbar";
 import UpcomingMatch from "../../components/UpcomingMatch/UpcomingMatch";
 import badminton from "../../assests/demoPhotos/badminton.jpg";
 import bb from "../../assests/demoPhotos/basketball.jpg";
 import chess from "../../assests/demoPhotos/chess.jpg";
 import fb from "../../assests/demoPhotos/football.jpg";
-import lt from "../../assests/demoPhotos/lt.jpg";
 import tt from "../../assests/demoPhotos/tt.jpg";
 import vb from "../../assests/demoPhotos/vb.jpg";
 

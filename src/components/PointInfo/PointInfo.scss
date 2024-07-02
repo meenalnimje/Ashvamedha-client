@@ -1,5 +1,5 @@
 .pointinfo {
-    border: 2px solid #141E46;
+    border: 2px solid white;
     height: 50px;
     display: flex;
     justify-content: space-around;
@@ -56,11 +56,11 @@
 
 }
 
-@media screen and (max-width:450px) {
+@media screen and (max-width:750px) {
     .pointinfo {
-        margin: 10px;
-        width: 100%;
+        width: 95%;
         height: 100px;
+        margin: 10px 10px;
         text-transform: lowercase;
         display: flex;
         justify-content: space-around;
@@ -114,13 +114,14 @@
 
 @media screen and (max-width:350px) {
     .pointinfo {
-        margin: 10px;
-        width: 100%;
+        // margin: 10px;
         height: 100px;
         text-transform: lowercase;
         display: flex;
         justify-content: space-around;
         align-items: center;
+        width: 95%;
+        margin: 10px 10px;
 
         .serial-no {
             width: 10%;

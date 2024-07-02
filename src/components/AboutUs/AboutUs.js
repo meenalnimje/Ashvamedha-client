@@ -8,29 +8,33 @@ import { AiOutlineInstagram } from "react-icons/ai";
 import CounterUpPage from "./CounterUpPage";
 import { Parallax } from "react-parallax";
 import axios from "axios";
+import bg from "../../assests/demoPhotos/bg.jpg";
 import { setLoading } from "../../redux/appSlice";
 
 function AboutUs() {
   const isLoading = useSelector((state) => state.appReducer.isLoading);
   const dispatch = useDispatch();
-  const [bg, setBg] = useState("");
+  // const [bg, setBg] = useState("");
   const [logos, setLogos] = useState([]);
-  async function fetchBgImages() {
-    try {
-      dispatch(setLoading(true));
-      const response = await axios.post(
-        "https://ashvamedha.onrender.com/upload/",
-        {
-          folderName: "bgImg",
-        }
-      );
-      // setBg(response.data.result);
-      setBg(response?.data?.result[0]?.image?.url);
-    } catch (err) {
-    } finally {
-      dispatch(setLoading(false));
-    }
-  }
+  // async function fetchBgImages() {
+  //   try {
+  //     dispatch(setLoading(true));
+  //     const response = await axios.post(
+  //       "https://ashvamedha.onrender.com/upload/",
+  //       {
+  //         folderName: "bgImg",
+  //       }
+  //     );
+  //     // setBg(response.data.result);
+  //     setBg(response?.data?.result[0]?.image?.url);
+  //   } catch (err) {
+  //   } finally {
+  //     dispatch(setLoading(false));
+  //   }
+  // }
+  const imgStyle = {
+    filter: "grayscale(100%)",
+  };
   async function fetchLogoImages() {
     try {
       dispatch(setLoading(true));
@@ -49,7 +53,7 @@ function AboutUs() {
     }
   }
   useEffect(() => {
-    fetchBgImages();
+    // fetchBgImages();
     fetchLogoImages();
   }, []);
   const handleRedirect = (platform) => {
@@ -75,7 +79,12 @@ function AboutUs() {
   return (
     !isLoading && (
       <div className="AboutUs">
-        <Parallax bgImage={bg} strength={500}>
+        <Parallax
+          bgImage={bg}
+          bgImageStyle={imgStyle}
+          strength={500}
+          blur={100}
+        >
           <div className="content">
             <div className="title">
               <h1>

@@ -10,11 +10,11 @@
 }
 
 :root {
-    --color-primary: #030027;
-    --color-secondary: #060046;
-    --color-tertiary: #09006d;
-    --color-quaternary: #0d009f;
-    --color-quinary: #1300e2;
+    --color-primary: #ff3d02;
+    --color-secondary:  #ff440a;
+    --color-tertiary:  #fe4b14;
+    --color-quaternary:  #ff5926;
+    --color-quinary: #fe6537;
     /*
     --color-primary: #5192ED;
     --color-secondary: #69A1F0;
